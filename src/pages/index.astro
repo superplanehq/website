@@ -3,14 +3,56 @@
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>SuperPlane</title>
-	</head>
-	<body>
-		<h1>SuperPlane</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>SuperPlane</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 500px;
+        padding: 2rem;
+      }
+
+      .logo {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 2rem;
+      }
+
+      .coming-soon {
+        font-size: 1.5rem;
+        color: #333;
+        margin: 0;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="/src/layouts/superplane-logo.svg"
+        alt="SuperPlane Logo"
+        class="logo"
+      />
+      <h1 class="coming-soon">Coming soon.</h1>
+    </div>
+  </body>
 </html>

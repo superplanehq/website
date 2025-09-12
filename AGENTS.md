@@ -12,6 +12,8 @@ All commands should be run from the root of the project:
 - `npm run preview` - Preview build locally before deploying
 - `npm run astro ...` - Run Astro CLI commands (e.g., `npm run astro add`, `npm run astro check`)
 
+**Important:** Do not run `npm run dev` or start the development server automatically. The user will handle running the server themselves.
+
 ## Project Architecture
 
 This is an Astro-based website for SuperPlane using the minimal starter template.
