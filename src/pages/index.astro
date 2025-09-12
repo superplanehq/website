@@ -9,50 +9,15 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>SuperPlane</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          sans-serif;
-        background: #ffffff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-      }
-
-      .container {
-        text-align: center;
-        max-width: 500px;
-        padding: 2rem;
-      }
-
-      .logo {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        margin-bottom: 2rem;
-      }
-
-      .coming-soon {
-        font-size: 1.5rem;
-        color: #333;
-        margin: 0;
-        font-weight: 300;
-        letter-spacing: 0.5px;
-      }
-    </style>
   </head>
-  <body>
-    <div class="container">
+  <body class="m-0 p-0 bg-gray-900 flex flex-col items-center justify-center min-h-screen font-sans">
+    <div class="text-center max-w-lg p-8">
       <img
         src="/src/layouts/superplane-logo.svg"
         alt="SuperPlane Logo"
-        class="logo"
+        class="w-full max-w-sm h-auto mb-8 invert"
       />
-      <h1 class="coming-soon">Coming soon.</h1>
+      <h1 class="text-2xl text-gray-100 m-0 font-light tracking-wide">Coming soon.</h1>
     </div>
   </body>
 </html>
