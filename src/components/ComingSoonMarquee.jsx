@@ -1,5 +1,5 @@
 export default function ComingSoonMarquee() {
-  const text = "COMING SOON";
+  const text = "Coming Soon";
 
   return (
     <div style={{
@@ -8,23 +8,22 @@ export default function ComingSoonMarquee() {
       width: '100%',
       overflow: 'hidden',
       whiteSpace: 'nowrap',
-      background: '#9ED8F7',
-      mixBlendMode: 'difference',
+      background: 'blue',
+      padding: '10px 0',
       zIndex: 10
     }}>
       <div
         style={{
           display: 'inline-block',
           animation: 'marquee 150s linear infinite',
-          fontSize: '2rem',
-          fontWeight: '500',
-          color: '#000',
+          fontSize: '0.9rem',
+          color: '#fff',
           textTransform: 'uppercase'
         }}
       >
         {/* Duplicate the text enough times to cover + overflow screen width */}
         {[...Array(30)].map((_, i) => (
-          <span key={i} style={{ marginRight: '1rem' }}>{text}</span>
+          <span key={i} style={{ marginRight: '2rem' }}>~/{text}</span>
         ))}
       </div>
 

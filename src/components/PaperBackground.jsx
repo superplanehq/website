@@ -4,11 +4,11 @@ export default function GeneratedBackground() {
     return (
         <Dithering
             colorBack="#00000000"
-            colorFront="#333"
-            speed={0.42}
+            colorFront="#888"
+            speed={0.4}
             shape="swirl"
             type="8x8"
-            pxSize={5}
+            pxSize={4}
             scale={1.56}
             frame={747933.9080000629}
             style={{
